@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.mycalculator.MainActivity">
+
+    <EditText android:id="@+id/display_tv"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:hint="@string/Hint"
+        android:gravity="right"
+        android:textSize="45sp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/one_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/One"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_tv"
+        app:layout_constraintRight_toLeftOf="@id/two_btn"/>
+    <Button
+        android:id="@+id/two_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Two"
+        app:layout_constraintLeft_toRightOf="@id/one_btn"
+        app:layout_constraintTop_toBottomOf="@id/display_tv"
+        app:layout_constraintRight_toLeftOf="@id/three_btn"/>
+    <Button
+        android:id="@+id/three_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Three"
+        app:layout_constraintLeft_toRightOf="@id/two_btn"
+        app:layout_constraintTop_toBottomOf="@id/display_tv"
+        app:layout_constraintRight_toLeftOf="@id/clear_btn"/>
+    <Button
+        android:id="@+id/clear_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Clear"
+        app:layout_constraintLeft_toRightOf="@id/three_btn"
+        app:layout_constraintTop_toBottomOf="@id/display_tv"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/plus_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Plus"
+        app:layout_constraintLeft_toRightOf="@id/six_btn"
+        app:layout_constraintTop_toBottomOf="@id/clear_btn"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/six_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Six"
+        app:layout_constraintLeft_toRightOf="@id/five_btn"
+        app:layout_constraintTop_toBottomOf="@id/three_btn"
+        app:layout_constraintRight_toLeftOf="@id/plus_btn" />
+    <Button
+        android:id="@+id/five_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Five"
+        app:layout_constraintLeft_toRightOf="@id/four_btn"
+        app:layout_constraintTop_toBottomOf="@id/two_btn"
+        app:layout_constraintRight_toLeftOf="@id/six_btn" />
+    <Button
+        android:id="@+id/four_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/one_btn"
+        app:layout_constraintRight_toLeftOf="@id/five_btn"/>
+    <Button
+        android:id="@+id/seven_btn"
+        android:text="@string/Seven"
+        style="@style/MyCustomStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/four_btn"
+        app:layout_constraintRight_toLeftOf="@id/eight_btn"
+       />
+    <Button
+        android:id="@+id/eight_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Eight"
+        app:layout_constraintLeft_toRightOf="@id/seven_btn"
+        app:layout_constraintTop_toBottomOf="@id/five_btn"
+        app:layout_constraintRight_toLeftOf="@id/nine_btn" />
+    <Button
+        android:id="@+id/nine_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Nine"
+        app:layout_constraintLeft_toRightOf="@id/eight_btn"
+        app:layout_constraintTop_toBottomOf="@id/six_btn"
+        app:layout_constraintRight_toLeftOf="@id/minus_btn"
+         />
+    <Button
+        android:id="@+id/minus_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Minus"
+        app:layout_constraintLeft_toRightOf="@id/nine_btn"
+        app:layout_constraintTop_toBottomOf="@id/plus_btn"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/zero_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Zero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seven_btn"
+        app:layout_constraintRight_toLeftOf="@id/mult_btn" />
+    <Button
+        android:id="@+id/mult_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Mult"
+        app:layout_constraintLeft_toRightOf="@id/zero_btn"
+        app:layout_constraintTop_toBottomOf="@id/eight_btn"
+        app:layout_constraintRight_toLeftOf="@id/division_btn" />
+    <Button
+        android:id="@+id/division_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Division"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/mult_btn"
+        app:layout_constraintTop_toBottomOf="@id/nine_btn"
+        app:layout_constraintRight_toLeftOf="@id/point_btn" />
+    <Button
+        android:id="@+id/point_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Point"
+        app:layout_constraintLeft_toRightOf="@id/division_btn"
+        app:layout_constraintTop_toBottomOf="@id/minus_btn"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/equal_btn"
+        style="@style/MyCustomStyle"
+        android:text="@string/Equal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/division_btn"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
